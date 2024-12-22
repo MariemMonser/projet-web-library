@@ -1,0 +1,178 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Poppins', 'sans-serif';
+    outline: none;
+    text-decoration: none;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #4f4e4e;
+}
+
+/* Form Container */
+#form {
+    width: 500px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+h1:hover {
+    color: #322f3b;
+    cursor: help;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    transition: 0.4s;
+    padding: 5px;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #888;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* Placeholder on Focus */
+input:focus::placeholder {
+    color: #bbb;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    width: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    transition: 0.4s;
+}
+
+/* Button Styling */
+button {
+    background: #b19191;
+    border-radius: 10px;
+    padding: 8px;
+    width: 90%;
+    text-transform: uppercase;
+    color: rgb(105, 93, 93);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: rgba(243, 141, 141, 0.541);
+    color: #333;
+}
+
+/* Reset Button */
+#b2 {
+    background: transparent;
+    color: rgb(130, 130, 130);
+    width: 110px;
+    border: 2px solid rgba(198, 188, 188, 0.703);
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 90px;
+    padding: 10px;
+    transition: 0.9s;
+}
+
+#b2:hover {
+    background: #333;
+    color: rgb(255, 191, 191);
+}
+
+/* Back Button */
+#b3 {
+    background: transparent;
+    color: rgb(99, 87, 214);
+    width: 110px;
+    border: 2px solid rgba(199, 142, 142, 0.703);
+    margin: 10px;
+    padding: 10px;
+    transition: 0.9s;
+}
+
+.back {
+    text-decoration: none;
+    color: rgb(136, 87, 87);
+}
+
+#b3:hover {
+    background: #412222;
+    color: white;
+}
+
+/* Icon Styling */
+#n {
+    transition: 0.5s;
+}
+
+#n:hover {
+    color: #093d37;
+}
+
+/* Social Media Links */
+.links a i {
+    font-size: 40px;
+    color: black;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+#fb:hover {
+    color: #316FF6;
+}
+
+#mail:hover {
+    color: rgb(147, 0, 0);
+}
+
+#whats:hover {
+    color: #187b70;
+}
+
+#instagram:hover {
+    color: #8a1c76;
+}
+
+#linkedin:hover {
+    color: blue;
+}

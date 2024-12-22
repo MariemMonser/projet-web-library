@@ -1,0 +1,292 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;    
+    padding-bottom: 0;
+    
+
+}
+
+
+  header {
+    background-color: #1d3557; /* Dark Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+header img {
+    height: 120px;
+    width: 120px;
+}
+
+/* Title Styling */
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+/* Navigation Menu Styling */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+/* Menu List Styling */
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation Links Styling */
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #457b9d; /* Lighter Blue on hover */
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+    position: relative;
+}
+.carousel-item p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 2px;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    padding: 10px 0;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Pour la liste déroulante */
+ul.dropdown-menu {
+    max-height: 400px; /* Ajuster la hauteur maximale selon besoin */
+    overflow-y: auto;  /* Ajoute une barre de défilement verticale si nécessaire */
+    padding: 0;        /* Éviter les marges internes inutiles */
+}
+
+/* Facultatif : ajuster l'affichage du menu déroulant */
+li.dropdown:hover .dropdown-menu {
+    display: block; /* Assure que le menu est visible lors du survol */
+}
+
+
+.dropdown-menu li {
+    padding: 8px 15px;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    color: rgb(10, 10, 10);
+    padding: 5px 10px;
+    font-weight: normal;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #788c99;
+    border-radius: 3px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown-menu {
+        left: 0;
+        right: 0;
+    }
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+}
+#best_off h1{
+    margin-top: 1cm;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size: 30px;
+    margin-bottom: 1cm;
+}
+.bookscont{
+    margin-top: 1cm;
+    
+}
+.bookscont h3{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size: 30px;
+    margin-bottom: 1cm;
+    
+}
+.books-container {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 20px;
+    justify-items: center; /* Centrer les éléments */
+}
+
+.book-card {
+    width: 100%;
+    max-width: 250px; /* Augmenter la largeur à 250px */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    max-height: 350px; /* Augmenter la taille des images */
+    object-fit: contain; /* Assurer que l'image s'adapte sans déformation */
+}
+
+.book-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.book-card button {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.book-card button:hover {
+    background-color: #b71c1c;
+}
+
+#Citation {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #9b9b9b; /* Couleur du contour */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Fond légèrement gris */
+    max-width: 800px;
+    font-family: 'Georgia', serif; /* Style élégant pour le texte */
+    color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    position: relative;
+}
+
+#Citation legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1d3557;
+    background-color: #f9f9f9; /* Fond identique à celui du fieldset */
+    position:relative;
+    top: -14px;
+    left: 20px;
+}
+
+#Citation ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+}
+
+#Citation li {
+    margin-bottom: 15px; /* Espacement entre les citations */
+    padding: 10px;
+    font-size: 1.2em; /* Taille du texte */
+    line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+    border-left: 4px solid #15273f; /* Barre verticale de couleur */
+    padding-left: 15px; /* Espace entre la barre et le texte */
+    font-style: italic; /* Style italique pour les citations */
+    background-color: #ffffff; /* Fond blanc pour la citation */
+}
+
+#Citation li:last-child {
+    margin-bottom: 0; /* Supprime l'espacement après la dernière citation */
+}
+footer {
+    margin-top: 15px;
+    padding: 20px; /* Espace interne */
+    background-color: #4c4f68; /* Couleur de fond */
+    text-align: center; /* Texte centré */
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+footer #quote q {
+    font-style: italic; /* Style italique pour la citation */
+    color: #181818; /* Couleur du texte de la citation */
+}
+
+footer #quote p {
+    margin: 10px 0; /* Espacement entre le paragraphe et les autres éléments */
+    color: #1d1d1d; /* Couleur générale du texte */
+}
+

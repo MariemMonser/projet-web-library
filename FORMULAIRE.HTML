@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Formuler</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+        <link href="styles.css" rel="stylesheet">
+        <script src="control_form.js"></script>
+    </header>
+    <body onLoad="bienvenue()">
+        <div class="container">
+        <form id="form" action="#">
+            <h1>Pour Avoir accés a notre contenue veuiller Créer un compte</h1>
+            <label>Username</label>
+            <input type="text" id="User" placeholder="Entrer votre nom"><i class='bx bx-user' id="n"></i>
+            <label>Email</label>
+            <input type="text" id="mail" placeholder="Entrer votre mail"><i class='bx bx-envelope' id="n" ></i>
+            <label>Mot de passe</label>
+            <input type="password" id="pass" placeholder="Entrer votre Password"><i class='bx bx-lock-alt' id="n" ></i>
+            <label>Confirmer le mot de passe</label>
+            <input type="password" id="cpass" placeholder="Confirmer votre Password"><i class='bx bx-lock-alt' id="n"></i>
+            <label>Numero de votre card</label>
+            <input type="password" id="numcard" placeholder="Numero de carte"><i class='bx bx-credit-card' id="n"></i>
+            <div id="but">
+                <input type="checkbox" id="chekb1"><span>Save account</span>
+                <input type="checkbox" id="chekb2"><span>Agree with terms & conditions</span>
+            </div>
+            <button type="submit" id="b1" onclick=" verif()">Sign up</button>
+            <button type="reset" id="b2" onclick="resetForm()">reset</button>
+            <button type="submit" id="b3"><a href="javascript:history.back()" class="back">back</a></button>
+            
+        </form>
+        <div class="links">
+            <a href="https://www.facebook.com/"><i class="bx bxl-facebook-circle" id="fb"></i></a>
+            <a href="https://mail.google.com/"><i class="bx bxl-gmail" id="mail"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="bx bxl-whatsapp" id="whats"></i></a>
+            <a href="https://www.linkedin.com/in/monser-mariem-05a72b254/"><i id="linkedin" class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/"><i class="bx bxl-instagram" id="instagram"></i></a>
+        </div>
+        
+    </div>
+    <script>
+        // JavaScript function to go back in browser history
+        function goBack() {
+          window.history.acc();
+        }
+      </script>
+    </body>
+    
+</html>
